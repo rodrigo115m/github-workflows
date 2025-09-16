@@ -1,0 +1,13 @@
+name: CICD Harbor
+jobs:
+  build:
+    uses: ./.github/workflows/npm.yml@main
+    secrets: inherit
+  sonar:
+    uses: ./.github/workflows/sonar.yml@main
+    secrets: inherit
+    need: build
+  registry:
+    uses: ./.github/workflows/registryHarbor.yml@main
+    secrets: inherit
+    need: registry
