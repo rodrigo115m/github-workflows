@@ -1,10 +1,14 @@
-name: CI
+name: Reusable workflow example
+
 on:
- push:
-   branches: [ main, develop, ci-pipeline-poc ]
- pull_request:
-   branches: [ main, develop ]
- workflow_dispatch:
+  workflow_call:
+    inputs:
+      config-path:
+        required: false
+        type: string
+    secrets:
+      token:
+        required: false
 jobs:
  build-test:
    runs-on: ubuntu-latest
