@@ -1,4 +1,4 @@
-name: CI
+name: workflow-example
 on:
  push:
    branches: [ main, develop, ci-pipeline-poc ]
