@@ -6,8 +6,8 @@ jobs:
   sonar:
     uses: ./.github/workflows/sonar.yml@main
     secrets: inherit
-    need: build
+    needs: build
   registry:
     uses: ./.github/workflows/registryHarbor.yml@main
     secrets: inherit
-    need: registry
+    needs: registry
