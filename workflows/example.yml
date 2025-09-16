@@ -1,9 +1,6 @@
 name: workflow-example
 on:
- push:
-   branches: [ main, develop, ci-pipeline-poc ]
- pull_request:
-   branches: [ main, develop ]
+ workflow_call:
 jobs:
  build-test:
    runs-on: ubuntu-latest
