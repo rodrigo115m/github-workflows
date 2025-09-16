@@ -2,7 +2,7 @@ name: Sonar Qube
 on:
  workflow_call:        # habilita que lo llamen otros repos
 jobs:
-  sonar:
+  sonarQube:
     runs-on: ubuntu-latest
     permissions:
       contents: read
