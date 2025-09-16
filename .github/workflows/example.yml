@@ -8,7 +8,7 @@ jobs:
      contents: read
    steps:
       - name: Access Repository Secrets Variable
-        run: echo "Repository Variable Value = ${{ secrets.MS_NAME }}"
+        run: echo "Repository Variable Value = ${{ var.MS_NAME }}"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Validate Gradle Wrapper

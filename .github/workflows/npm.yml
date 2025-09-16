@@ -1,0 +1,11 @@
+name: Dependency Install
+on:
+ workflow_call:        # habilita que lo llamen otros repos
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Access Repository Secrets Variable
+        run: echo "npm install"

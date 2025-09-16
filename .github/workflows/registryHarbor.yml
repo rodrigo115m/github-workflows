@@ -1,0 +1,11 @@
+name: Registry Harbor
+on:
+ workflow_call:        # habilita que lo llamen otros repos
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Access Repository Secrets Variable
+        run: echo "Configuracion Harbor Registry"
