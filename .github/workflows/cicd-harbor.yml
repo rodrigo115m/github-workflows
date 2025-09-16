@@ -12,4 +12,4 @@ jobs:
   registry:
     uses: rodrigo115m/github-workflows/.github/workflows/registryHarbor.yml@main
     secrets: inherit
-    needs: registry
+    needs: sonar
