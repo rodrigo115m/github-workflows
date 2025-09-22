@@ -8,4 +8,4 @@ jobs:
       contents: read
     steps:
       - name: Access Environment Variables
-        run: echo "ejecucion Sonar Repository ${{ vars.DB_HOST }}"
+        run: echo "ejecucion variable ${{ vars.DB_HOST }}"
