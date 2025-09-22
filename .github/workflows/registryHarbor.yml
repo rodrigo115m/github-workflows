@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    environment: ${{ github.ref_name}}
+    if: ${{ github.ref_name != "develop" }}
     steps:
       - name: Access Repository Secrets Variable
         run: echo "Configuracion Harbor Registry"
