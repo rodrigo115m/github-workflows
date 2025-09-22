@@ -7,5 +7,5 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Access Repository Secrets Variable
-        run: echo "npm install"
+      - name: Access Environment Variables
+        run: echo "ejecucion Sonar Repository ${{ vars.DB_HOST }}"
