@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    environment: ${{ github.ref_name }}
     steps:
       - name: Access Environment Variables
         run: echo "ejecucion variable ${{ vars.DB_HOST }}"
