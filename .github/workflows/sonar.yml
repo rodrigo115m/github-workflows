@@ -8,4 +8,4 @@ jobs:
       contents: read
     steps:
       - name: Access Repository Secrets Variable
-        run: echo "ejecucion Sonar Repository ${{ vars.MS_NAME }}"
+        run: exit 1
