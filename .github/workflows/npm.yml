@@ -8,4 +8,4 @@ jobs:
       contents: read
     steps:
       - name: Access Environment Variables
-        run: echo "ejecucion variable ${{ env.DB_HOST }}"
+        run: echo "ejecucion variable ${{ vars.DB_HOST }}"
