@@ -12,7 +12,7 @@ jobs:
       - name: Nodejs
         uses: actions/stup-node@v4
         with:
-          node-version:'20.19.5'
+          node-version: '20.19.5'
         run: npm ci
       - name: Unit Test
         run: npm test
