@@ -18,7 +18,7 @@ jobs:
           SONAR_HOST_URL: https://sonarcloud.io
         with:
           args: >
-            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }} \
-            -Dsonar.organization=${{ secrets.SONAR_ORG }} \
-            -Dsonar.sources=src
+            -Dsonar.projectKey=rodrigo115m_testing-githubcicd \
+            -Dsonar.organization=rodrigo115m \
+            -Dsonar.sources=app
             -Dsonar.verbose=true
