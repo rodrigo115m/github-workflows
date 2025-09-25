@@ -7,5 +7,11 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Access Repository Secrets Variable
-        run: echo "ejecucion Sonar Repository ${{ vars.MS_NAME }}"
+      - uses: actions/checkout@v4
+        with:
+          # Disabling shallow clones is recommended for improving the relevancy of reporting
+          fetch-depth: 0
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v4.1.0 # Ex: v4.1.0 or sha1, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
