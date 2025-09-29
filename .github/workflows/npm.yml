@@ -3,7 +3,7 @@ on:
  workflow_call:        # habilita que lo llamen otros repos
 jobs:
   dependency:
-    runs-on: example-runnerdeploy-vlwnc-zl46c
+    runs-on: actions-runner-system
     permissions:
       contents: read
     environment: ${{ github.ref_name }}
