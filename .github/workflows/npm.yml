@@ -3,7 +3,7 @@ on:
  workflow_call:        # habilita que lo llamen otros repos
 jobs:
   dependency:
-    runs-on: actions-runner-system
+    runs-on: custom-runner
     permissions:
       contents: read
     environment: ${{ github.ref_name }}
