@@ -3,7 +3,7 @@ on:
  workflow_call:        # habilita que lo llamen otros repos
 jobs:
   dependency:
-    runs-on: example-runnerdeploy-wx9kw-jrv5z
+    runs-on: self-hosted
     permissions:
       contents: read
     environment: ${{ github.ref_name }}
